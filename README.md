@@ -16,10 +16,11 @@ Division of labor models for social insects often use response thresholds as a m
 ## Methods
 
 * We first create 4 distribution types which are each controlled by their own set of parameters:
-  - Task-Sharing: all ants have the same response threshold
-  - Elite: a subset of ants have low thresholds for all tasks. Everyone else has a high threshold.
-  - Caste: each task has a group of ants that have a low threshold for that task. Everyone else has a high threshold for the task.
-  - Normal Distribution: all response thresholds across tasks and ants are independently drawn from a normal distribution. 
+  - In the following figure, the x-axis shows individuals, the y-axis is task, and the color is the response threshold level. 
+  - A) Task-Sharing: all ants have the same response threshold
+  - B) Elite: a subset of ants have low thresholds for all tasks. Everyone else has a high threshold.
+  - C) Caste: each task has a group of ants that have a low threshold for that task. Everyone else has a high threshold for the task.
+  - D) Normal Distribution: all response thresholds across tasks and ants are independently drawn from a normal distribution. 
 
 ![](/Images/distributionTypes.png)
 
@@ -41,17 +42,17 @@ Division of labor models for social insects often use response thresholds as a m
 
 ## Results
 
-* Normal and caste distributions produce the most realistic levels of divison of labor. 
+* Normal and caste distributions produce the most realistic levels of divison of labor. In the following figure, x shows the distribution types, y is the division of labor index of a simulation for a unique parameter combination, and the orange lines show the range of division of labor indeces in real social insects.
 
 ![](/Images/dol.png)
 
-* Only a normal distribution of thresholds produces right-tailed distributions like those of real social insects (which follow exponential and gamma distributions). Other distribution types produce more normal-looking distributions. 
+* Only a normal distribution of thresholds produces right-tailed distributions like those of real social insects (which follow exponential and gamma distributions, the kurtosis level of these distributions is represented by the top orange line in the following figure). Other distribution types produce more normal-looking distributions (the bottom orange line). 
 
 ![](/Images/activity.png)
 
 * Normal and elite distributions predict a significant and positive relationship between colony size and division of labor. 
 
-* All distribution types perform as well as the genetic algorithm-designed distribution in terms of most performance metrics. The one exception is that the GA distribution allowed the simulation to reach equilibrium sooner than the natural distributions. 
+* All distribution types perform as well as the genetic algorithm-designed distribution in terms of most performance metrics. The one exception is that the GA distribution allowed the simulation to reach equilibrium sooner than the natural distributions. In the following figure, we show the rank of each algorithm in terms of accomplishing some colony-level goal, represented on the x-axis. 
 
 ![](/Images/ranks.png)
 

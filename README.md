@@ -31,7 +31,9 @@ Division of labor models for social insects often use response thresholds as a m
 * At the end of the simulation, we record:
   - How much each ant performed each task, which allows us to calculate division of labor. 
   - How activity is distributed across each task. We measure how right-tailed it is with kurtosis
-  - Whether or not 
+  - Whether or not division of labor has a positive correlation with N.
+  
+* We also want to know how well these natural distributions will perform relative to an artificial distribution created by a genetic algorithm. 
 
 normal distributions performed the best. it had the highest kurtosis levels, it successfully predicted the relationship between N and DOL, and it had a realistic DOL range. It also performed well compared to GA 
 

@@ -21,6 +21,8 @@ Division of labor models for social insects often use response thresholds as a m
   - Caste: each task has a group of ants that have a low threshold for that task. Everyone else has a high threshold for the task.
   - Normal Distribution: all response thresholds across tasks and ants are independently drawn from a normal distribution. 
 
+![](/Images/distributionTypes.png)
+
 * We then run MCMC model where a colony of N ants need to perform T tasks.
   - The need for each task is captured by a signal. The higher the signal, the more the task needs to be done. 
   - Ants can choose to do any one of the tasks or rest. 
@@ -35,8 +37,26 @@ Division of labor models for social insects often use response thresholds as a m
   
 * We also want to know how well these natural distributions will perform relative to an artificial distribution created by a genetic algorithm. 
 
-normal distributions performed the best. it had the highest kurtosis levels, it successfully predicted the relationship between N and DOL, and it had a realistic DOL range. It also performed well compared to GA 
+![](/Images/gaDist.png)
 
-ultimately ga algorithm does not produce performance better than other algorithms
-biologically, this means that typical distributions may be sufficient for accomplishing colony goals
-for multi agent systems, this means that finkiky and computationally expensive optimization methods may not be necessary to organize swarms. This model took a lot of manual tuning, and on average took 6 times longer to find an optimal solution than it did for the biological distributions. 
+## Results
+
+* Normal and caste distributions produce the most realistic levels of divison of labor. 
+
+![](/Images/dol.png)
+
+* Only a normal distribution of thresholds produces right-tailed distributions like those of real social insects (which follow exponential and gamma distributions). Other distribution types produce more normal-looking distributions. 
+
+![](/Images/activity.png)
+
+* Normal and elite distributions predict a significant and positive relationship between colony size and division of labor. 
+
+* All distribution types perform as well as the genetic algorithm-designed distribution in terms of most performance metrics. The one exception is that the GA distribution allowed the simulation to reach equilibrium sooner than the natural distributions. 
+
+![](/Images/ranks.png)
+
+* Normal distributions pass all tests, indiciating that this is a valid assumption to make for future models. 
+
+* Engineers can use normal distributions to solve task allocation problems for task allocation problems.
+  - The normal distribution is much easier to optimize than a genetic algorithm, taking 6 times less computational time. 
+  - Normal distributions also perform nearly as well as the GA distribution.  

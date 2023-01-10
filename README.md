@@ -6,8 +6,8 @@ I compare the relative capacities of response threshold distributions across age
 * Supplementary Material
   - [Justification for Softmax Function](https://github.com/colinmichaellynch/Optimal-Threshold-Distributions/blob/main/Modeling%20response%20thresholds%20for%20multiple%20simultaneous%20stimuli%20using%20a%20Boltzmann-sampling%20approach.docx)
   - [Manuscript Draft](https://github.com/colinmichaellynch/Optimal-Threshold-Distributions/blob/main/Independent%20and%20normally-distributed%20response%20thresholds%20are%20biologically%20feasible%20for%20social%20insects.docx)
-* Simulation Code
-* Data Analytics
+* [Simulation Code](https://github.com/colinmichaellynch/Optimal-Threshold-Distributions/blob/main/masterScriptContinuousVariable.m)
+* [Data Analytics](https://github.com/colinmichaellynch/Optimal-Threshold-Distributions/blob/main/matrixAnalysisFinal.R)
 
 ## Background 
 

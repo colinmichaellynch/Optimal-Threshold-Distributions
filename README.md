@@ -4,8 +4,8 @@ I compare the relative capacities of response threshold distributions across age
 ## Table of Contents
 
 * Supplementary Material
-  - Justification for Softmax Function
-  - Manuscript Draft
+  - [Justification for Softmax Function](https://github.com/colinmichaellynch/Optimal-Threshold-Distributions/blob/main/Modeling%20response%20thresholds%20for%20multiple%20simultaneous%20stimuli%20using%20a%20Boltzmann-sampling%20approach.docx)
+  - [Manuscript Draft](https://github.com/colinmichaellynch/Optimal-Threshold-Distributions/blob/main/Independent%20and%20normally-distributed%20response%20thresholds%20are%20biologically%20feasible%20for%20social%20insects.docx)
 * Simulation Code
 * Data Analytics
 
@@ -17,11 +17,21 @@ Division of labor models for social insects often use response thresholds as a m
 
 * We first create 4 distribution types which are each controlled by their own set of parameters:
   - Task-Sharing: all ants have the same response threshold
-  - Elite: a subset of ants have low thresholds (so they are likely to do a task) for all tasks. Everyone else has a high threshold.
+  - Elite: a subset of ants have low thresholds for all tasks. Everyone else has a high threshold.
   - Caste: each task has a group of ants that have a low threshold for that task. Everyone else has a high threshold for the task.
   - Normal Distribution: all response thresholds across tasks and ants are independently drawn from a normal distribution. 
 
-*
+* We then run MCMC model where a colony of N ants need to perform T tasks.
+  - The need for each task is captured by a signal. The higher the signal, the more the task needs to be done. 
+  - Ants can choose to do any one of the tasks or rest. 
+  - This choice depends on the ant's reponse threshold. The lower it is, the more likely they are to do the task. 
+  - We use softmax function to determine this probability. 
+  - We run simulations with different combinations of free parameters, including N
+  
+* At the end of the simulation, we record:
+  - How much each ant performed each task, which allows us to calculate division of labor. 
+  - How activity is distributed across each task. We measure how right-tailed it is with kurtosis
+  - Whether or not 
 
 normal distributions performed the best. it had the highest kurtosis levels, it successfully predicted the relationship between N and DOL, and it had a realistic DOL range. It also performed well compared to GA 
 

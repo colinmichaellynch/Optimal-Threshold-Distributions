@@ -61,3 +61,7 @@ Division of labor models for social insects often use response thresholds as a m
 * Engineers can use normal distributions to solve task allocation problems for task allocation problems.
   - The normal distribution is much easier to optimize than a genetic algorithm, taking 6 times less computational time. 
   - Normal distributions also perform nearly as well as the GA distribution.  
+
+## Acknowledgements
+
+I would like to thank my collaborator Dr. Ted Pavlic for his advice and mathematical insights. 

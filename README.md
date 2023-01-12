@@ -49,7 +49,7 @@ Division of labor models for social insects often use response thresholds as a m
 * Normal and caste distributions produce the most realistic levels of divison of labor. In the following figure, x shows the distribution types, y is the division of labor index of a simulation for a unique parameter combination, and the orange lines show the range of division of labor indeces in real social insects.
 
 <p align="center">
-  <img width="500" height="350" src=/Images/dol.png>
+  <img width="500" height="400" src=/Images/dol.png>
 </p>
 
 * Only a normal distribution of thresholds produces right-tailed distributions like those of real social insects (which follow exponential and gamma distributions, the kurtosis level of these distributions is represented by the top orange line in the following figure). Other distribution types produce more normal-looking distributions (the bottom orange line). 
